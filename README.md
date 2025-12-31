@@ -1,0 +1,165 @@
+# 📚 Book Notes – Full-Stack Web Application
+
+**Book Notes** is a full-stack web application for tracking books you’ve read, storing personal notes, and rating them.  
+The app integrates a public API to automatically fetch book covers and persists all data in a PostgreSQL database.
+
+This project was built to demonstrate practical skills in **Node.js, Express, PostgreSQL, and API integration**.
+
+---
+
+## 🔍 Overview
+
+- Server-rendered web application (EJS)
+- PostgreSQL database persistence
+- External API integration (Open Library)
+- Clean, minimal UI focused on content
+- Classic MVC-style Express architecture
+
+---
+
+## ✨ Key Features
+
+- **CRUD operations** for books (Create, Read, Update, Delete)
+- **Persistent storage** using PostgreSQL
+- **Sorting functionality**:
+  - Most recent
+  - Rating (descending)
+  - Title (A → Z)
+- **Automatic book cover fetching** using Open Library Search API
+- Graceful fallback when no cover image is available
+- Clean and readable UI without CSS frameworks
+
+---
+
+## 🧠 Technical Skills
+
+- Node.js & Express.js server-side development
+- RESTful routing and middleware usage
+- PostgreSQL queries with `pg`
+- SQL-based sorting and data handling
+- Third-party API integration with Axios
+- Server-side rendering with EJS
+- Environment configuration with `dotenv`
+- Basic UX and error handling
+
+---
+
+## 🛠 Tech Stack
+
+| Layer        | Technology                     |
+|-------------|--------------------------------|
+| Backend     | Node.js, Express.js             |
+| Database    | PostgreSQL                      |
+| Templating  | EJS                             |
+| API         | Open Library Search API         |
+| HTTP Client | Axios                           |
+| Styling     | CSS (custom, no frameworks)     |
+
+---
+
+## 📂 Project Structure
+
+```
+book-notes/
+├── public/
+│   ├── styles/
+│   │   └── main.css
+│   └── images/
+│       └── image.png
+│
+├── views/
+│   ├── partials/
+│   │   ├── head.ejs
+│   │   ├── header.ejs
+│   │   └── footer.ejs
+│   ├── index.ejs
+│   ├── new.ejs
+│   └── edit.ejs
+│
+├── index.js
+├── package.json
+├── .env
+└── README.md
+```
+
+---
+
+## 🗄 Database Schema
+
+```sql
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  author TEXT,
+  rating INT,
+  notes TEXT,
+  cover_id INT
+);
+```
+
+---
+
+## 🌐 External API
+
+**Open Library Search API**
+
+- Used to retrieve book metadata and `cover_i`
+- Cover images are generated dynamically:
+
+```
+https://covers.openlibrary.org/b/id/{cover_id}-M.jpg
+```
+
+---
+
+## ⚙️ Local Setup
+
+### 1️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 2️⃣ Environment variables (`.env`)
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_NAME=book_notes
+PORT=3000
+```
+
+### 3️⃣ Run the app
+```bash
+npm run start
+```
+
+Visit:
+```
+http://localhost:3000
+```
+
+---
+
+## 📌 Design Decisions
+
+- **Server-side rendering** was chosen for simplicity and clarity
+- **SQL sorting** ensures correct ordering and better performance
+- **Minimal front-end** keeps focus on content
+- API failures do not break the UI (fallback cover)
+
+---
+
+## 🚀 Possible Enhancements
+
+- Reading date (`date_read`) instead of ID-based recency
+- Pagination or search
+- Authentication and user accounts
+- Deployment (Render / Railway / Fly.io)
+- Improved validation and error feedback
+
+---
+
+## 👤 Author
+
+Developed by **Neagu Mihai Daniel**  
