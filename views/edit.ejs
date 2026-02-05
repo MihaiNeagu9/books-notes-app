@@ -3,16 +3,16 @@
 
         
         <main class="container page narrow">
-            <h1 class="page-title">Editează cartea</h1>
+            <h1 class="page-title">Edit the book</h1>
 
             <form class="form" action="/books/<%= book.id %>" method="POST">
                 <div class="field">
-                    <label for="title">Titlu *</label>
+                    <label for="title">Title *</label>
                     <input id="title" name="title" required value="<%= book.title %>" />
                 </div>
 
                 <div class="field">
-                    <label for="author">Autor</label>
+                    <label for="author">Author</label>
                     <input id="author" name="author" value="<%= book.author ?? '' %>" />
                 </div>
 
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="field">
-                    <label for="notes">Notițe</label>
+                    <label for="notes">Notes</label>
                     <textarea id="notes" name="notes" rows="6"><%= book.notes ?? '' %></textarea>
                 </div>
 
