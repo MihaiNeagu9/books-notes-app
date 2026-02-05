@@ -17,8 +17,6 @@ This project was built to demonstrate practical skills in **Node.js, Express.js,
 
 ---
 
----
-
 ## 🖼️ Screenshots
 
 <img width="1903" height="992" alt="Screenshot 2026-02-05 094621" src="https://github.com/user-attachments/assets/19bb4c23-6de5-4587-b149-8c2ef8e3a14e" />
