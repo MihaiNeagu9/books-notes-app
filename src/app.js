@@ -1,12 +1,12 @@
 import express from "express";
-import dotenv from "dotenv";
-
-dotenv.config();
+import booksRouter from "./routes/books.routes.js";
 
 const app = express();
 
-// middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.set("view engine", "ejs");
+
+app.use("/", booksRouter);
 
 export default app;

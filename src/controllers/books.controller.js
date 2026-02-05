@@ -16,8 +16,8 @@ export async function listBooks(req, res) {
     const result = await pool.query(`SELECT * FROM books ORDER BY ${orderBy};`);
     res.render("index.ejs", { books: result.rows, sort: sort || "recent" });
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Server error.");
+    console.error("listBooks error:", err);
+    res.status(500).send(err?.message || "Server error.");
   }
 }
 

@@ -2,7 +2,7 @@ import pg from "pg";
 
 const { Pool } = pg;
 
-// Pool singleton (a single connection/pool for the application)
+// Singleton pool (a single connection/pool for the application)
 const pool = new Pool({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT ? Number(process.env.DB_PORT) : 5432,

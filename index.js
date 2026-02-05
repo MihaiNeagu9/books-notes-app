@@ -1,5 +1,4 @@
 import express from "express";
-import pg from "pg";
 import dotenv from "dotenv";
 import axios from "axios";
 
