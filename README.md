@@ -3,7 +3,7 @@
 **Book Notes** is a full-stack web application for tracking books you’ve read, storing personal notes, and rating them.  
 The app integrates a public API to automatically fetch book covers and persists all data in a PostgreSQL database.
 
-This project was built to demonstrate practical skills in **Node.js, Express, PostgreSQL, and API integration**.
+This project was built to demonstrate practical skills in **Node.js, Express.js, PostgreSQL, and API integration**.
 
 ---
 
@@ -14,6 +14,15 @@ This project was built to demonstrate practical skills in **Node.js, Express, Po
 - External API integration (Open Library)
 - Clean, minimal UI focused on content
 - Classic MVC-style Express architecture
+
+---
+
+## 🖼️ Screenshots
+
+<img width="1903" height="992" alt="Screenshot 2026-02-05 094621" src="https://github.com/user-attachments/assets/19bb4c23-6de5-4587-b149-8c2ef8e3a14e" />
+<img width="1911" height="992" alt="Screenshot 2026-02-05 095052" src="https://github.com/user-attachments/assets/c8d0cbe0-7ab2-41bf-826d-9164d12dedb9" />
+<img width="1919" height="991" alt="Screenshot 2026-02-05 095120" src="https://github.com/user-attachments/assets/2f79ddf0-b65f-4cf7-9c81-314b42db9a2c" />
+
 
 ---
 
@@ -33,14 +42,15 @@ This project was built to demonstrate practical skills in **Node.js, Express, Po
 
 ## 🧠 Technical Skills
 
-- Node.js & Express.js server-side development
-- RESTful routing and middleware usage
-- PostgreSQL queries with `pg`
-- SQL-based sorting and data handling
-- Third-party API integration with Axios
-- Server-side rendering with EJS
-- Environment configuration with `dotenv`
-- Basic UX and error handling
+- Designed and implemented full CRUD functionality for book management using Express.js and PostgreSQL
+- Built server-side rendered pages with EJS, following a clear MVC-style architecture
+- Developed RESTful routes and middleware for handling form submissions and data validation
+- Wrote SQL queries for sorting data by recency, rating, and title directly at database level
+- Integrated a third-party public API (Open Library Search API) to fetch book metadata and cover images
+- Implemented graceful fallback logic for missing external API data
+- Managed environment-specific configuration using dotenv
+- Structured the project for maintainability using reusable EJS partials
+- Handled basic error scenarios to prevent UI and server crashes
 
 ---
 
@@ -155,7 +165,7 @@ http://localhost:3000
 - Reading date (`date_read`) instead of ID-based recency
 - Pagination or search
 - Authentication and user accounts
-- Deployment (Render / Railway / Fly.io)
+- Production deployment with environment-based configuration
 - Improved validation and error feedback
 
 ---
@@ -163,3 +173,4 @@ http://localhost:3000
 ## 👤 Author
 
 Developed by **Neagu Mihai Daniel**  
+Junior Developer | Node.js | PostgreSQL  
