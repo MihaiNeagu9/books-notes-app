@@ -3,7 +3,7 @@
 **Book Notes** is a full-stack web application for tracking books you’ve read, storing personal notes, and rating them.  
 The app integrates a public API to automatically fetch book covers and persists all data in a PostgreSQL database.
 
-This project was built to demonstrate practical skills in **Node.js, Express, PostgreSQL, and API integration**.
+This project was built to demonstrate practical skills in **Node.js, Express.js, PostgreSQL, and API integration**.
 
 ---
 
