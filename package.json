@@ -2,7 +2,7 @@
   "name": "book-notes-app",
   "version": "1.0.0",
   "description": "A full-stack web application for storing book notes, ratings, and covers using Node.js, Express, PostgreSQL, and Open Library API.",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
