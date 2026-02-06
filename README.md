@@ -70,25 +70,55 @@ This project was built to demonstrate practical skills in **Node.js, Express.js,
 ## 📂 Project Structure
 
 ```
-book-notes/
+book-notes-app/
+├── src/
+│   ├── bootstrap.js
+│   │   └── Loads environment variables (dotenv) before app initialization
+│   │
+│   ├── server.js
+│   │   └── Application entry point (starts HTTP server)
+│   │
+│   ├── app.js
+│   │   └── Express app configuration (middleware, views, routes)
+│   │
+│   ├── db/
+│   │   └── pool.js
+│   │       └── PostgreSQL connection pool configuration
+│   │
+│   ├── routes/
+│   │   └── books.routes.js
+│   │       └── Route definitions for book-related endpoints
+│   │
+│   ├── controllers/
+│   │   └── books.controller.js
+│   │       └── Business logic for CRUD operations on books
+│   │
+│   ├── services/
+│   │   └── openLibrary.service.js
+│   │       └── Integration with Open Library Search API
+│   │
+│   └── utils/
+│       └── normalizeBook.js
+│           └── Input validation and normalization helpers
+│
 ├── public/
 │   ├── styles/
 │   │   └── main.css
 │   └── images/
-│       └── image.png
 │
 ├── views/
 │   ├── partials/
 │   │   ├── head.ejs
 │   │   ├── header.ejs
 │   │   └── footer.ejs
+│   │
 │   ├── index.ejs
 │   ├── new.ejs
 │   └── edit.ejs
 │
-├── index.js
-├── package.json
 ├── .env
+├── package.json
+├── package-lock.json
 └── README.md
 ```
 
