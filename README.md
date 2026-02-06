@@ -23,7 +23,6 @@ This project was built to demonstrate practical skills in **Node.js, Express.js,
 <img width="1911" height="992" alt="Screenshot 2026-02-05 095052" src="https://github.com/user-attachments/assets/c8d0cbe0-7ab2-41bf-826d-9164d12dedb9" />
 <img width="1919" height="991" alt="Screenshot 2026-02-05 095120" src="https://github.com/user-attachments/assets/2f79ddf0-b65f-4cf7-9c81-314b42db9a2c" />
 
-
 ---
 
 ## ✨ Key Features
